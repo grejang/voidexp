@@ -116,7 +116,7 @@
     border: 2px solid #555;
     border-radius: 6px;
   }
-    </style>
+    <style>
   </head>
   <body>
   
@@ -180,7 +180,7 @@ document.addEventListener("click", (e) => {
     <script>
       const isMobile = window.innerWidth <= 768;
       document.head.insertAdjacentHTML('beforeend', `<style>
-        ${isMobile ? `body { width: 360px; } .text { top: 0px; }` : `body { width: 900px; } .text { top: 0px; } .layer { display: none; width: 0px; }`}</style>`);
+        ${isMobile ? `body { width: 360px; } .text { top: 0px; }` : `body { width: 900px; } .text { top: 0px; } .layer { display: none; width: 0px; }`}<style>`);
     </script>
     
     <audio id="music" src="https://raw.githubusercontent.com/voidexp-site/voidexp/main/soundtracks/the_destruction_of_mb_delta.ogg" autoplay loop></audio>
