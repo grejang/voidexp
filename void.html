@@ -24,6 +24,12 @@
     <a href="index.html">torna alla home</a>
     
     <audio id="music" src="soundtracks/the_end.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
     
     <!--Non ho la piú pallida idea di come tu stia leggendo questo ma questo messaggio e qua solo per dire che il soundtrack usato é C418 - The end lho scelto perche e in mia opinione molto rilassante-->
   

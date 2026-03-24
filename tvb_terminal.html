@@ -176,6 +176,12 @@
   <p>ATTENZIONE: Console ancora in sviluppo</p>
 
 <audio id="music" src="soundtracks/inverse_tesseract.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
 
 <div class="container">
     <img class="background-img" src="images/tvb.png" alt="The Void Bridge">

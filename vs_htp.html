@@ -33,6 +33,12 @@
     <a href="voidsweeper.html">Torna a VoidSweeper</a>
     
     <audio id="music" src="soundtracks/elsewhere.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
      
     <h1>VoidSweeper - Come Giocare</h1>
     <p>Voidsweeper è semplicemente la mia versione di MineSweeper con solo cambiamenti grafici</p>

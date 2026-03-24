@@ -187,6 +187,12 @@
     <a href="index.html">Torna alla Home</a>
 
     <audio id="music" src="soundtracks/saw_13_returns.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
 
     <div id="title"><h1>Notizie, Annunci e Changelogs</h1></div>
 

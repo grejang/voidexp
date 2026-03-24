@@ -43,6 +43,12 @@
         ${isMobile ? ` #countdown {  } ` : ` #countdown {  } `}</style>`);
     </script>
 	<audio id="music" src="soundtracks/the_new_era_has_begun.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
 	<div class="countdown">
 		<div id="countdown"></div>
 		<p class="text">- Il team di SkyBase, ADMINSPACE, MB delta e DeltaQuest</p>

@@ -189,6 +189,12 @@
   <body>
   
    <audio id="music" src="soundtracks/x.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
   
    <div id="ui-container">
        <img id="face" src="textures/face_idle.png" alt="face">

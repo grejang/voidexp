@@ -176,6 +176,12 @@ document.addEventListener("click", (e) => {
     </script>
     
     <audio id="music" src="soundtracks/the_destruction_of_mb_delta.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
     <img src="images/grlayer.png" alt="VoidEXP" id="layer">
     <div class="text">
     <h1>The ultimate truth - VoidEXP</h1>

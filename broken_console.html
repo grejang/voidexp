@@ -123,6 +123,12 @@
 </div>
 
 <audio id="music" src="soundtracks/uncontrollable_catastrophe.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
 
 <div class="container">
     <img class="background-img" src="images/brokenconsolegui.png" alt="TheInfiniteVoid">

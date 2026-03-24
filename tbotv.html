@@ -24,6 +24,12 @@
     <a href="index.html">torna alla home</a>
     
     <audio id="music" src="soundtracks/reflections_upon_lazarus.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
      
     <h1>The Bottom Of The Void</h1>
 

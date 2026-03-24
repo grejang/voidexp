@@ -20,6 +20,12 @@
   </head>
   <body>
       <audio id="music" src="soundtracks/purple_gaze.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
         <a href="index.html">Torna alla home</a>
         
         <p>[]</p> 

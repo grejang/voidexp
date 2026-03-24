@@ -29,6 +29,12 @@
     </script>
     
     <audio id="music" src="soundtracks/promotion.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
      
     <p>VoidEXP Terminals</p>
     <img src="images/voidexplogo.png" alt="VoidEXP logo" width=360px>

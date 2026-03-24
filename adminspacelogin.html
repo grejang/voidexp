@@ -120,6 +120,12 @@
 <!--Allora... 1: Come è possibile che tu stia leggendo questo, 2: Qua non ce nulla da cercare -->
 
 <audio id="music" src="soundtracks/the_new_era_has_begun.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
 
 <div class="container">
     <img class="background-img" src="images/adminspaceguiyesno.png" alt="TheInfiniteVoid">

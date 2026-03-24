@@ -69,6 +69,12 @@
     <a href="index.html">Torna alla Home</a>
     
     <audio id="music" src="soundtracks/event00071.ogg" autoplay loop></audio>
+	<script>
+		document.addEventListener('click', function() {
+		const music = document.getElementById('music');
+		if (music.paused) music.play();
+		}, { once: false });
+	</script>
      
     <div id="title"><h1>Skybox 3D</h1></div> 
     
